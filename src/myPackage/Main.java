@@ -18,12 +18,12 @@ public class Main {
             System.out.println("Nhap ten :");
             String name = sc.nextLine();
 
-            System.out.println("Nhap luong :");
-            double rice = sc.nextDouble();
+            System.out.println("Nhap nam1 :");
+            int year = sc.nextInt();
 
             Add add = new Add(nameStreet);
 
-            Employee emp = new Employee(name, rice);
+            Employee emp = new Employee(name, year);
             emp.setAdd(add);
 
             emps[i] = emp;
@@ -35,7 +35,8 @@ public class Main {
         for (Employee emp : emps) {
             System.out.println("Name :" + emp.getName() + "\n"
             + "Address :" + emp.getAdd().getStreet() + "\n"
-            + "Rice :" + emp.getRice());
+            + "Rice :" + emp.rice());
         }
     }
 }
+// Luyen tap su dung (super) (Override) (Scanner);

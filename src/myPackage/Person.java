@@ -1,6 +1,7 @@
 package myPackage;
 
 public class Person {
+    private final double RICE_SIMPLE = 1000;
     private String name;
     private Add add;
 
@@ -27,6 +28,10 @@ public class Person {
 
     public void setAdd(Add add) {
         this.add = add;
+    }
+
+    public double rice() {
+        return RICE_SIMPLE;
     }
 
 }
